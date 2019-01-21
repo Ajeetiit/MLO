@@ -1,8 +1,8 @@
 ***********************************************************************************************************************
-#MLO Readme
+# MLO Readme
 ************************************************************************************************************************
 
-##About MLO
+## About MLO
 -----------------------------------------------------------------------------------------------------------------------
 
 The optimization of reconfigurable applications often requires
@@ -27,23 +27,23 @@ inaccurate results or other.
 
 ************************************************************************************************************************
 
-##Directory Structure
+## Directory Structure
 
 -----------------------------------------------------------------------------------------------------------------------
-###doc
+### doc
 -----------------------------------------------------------------------------------------------------------------------
 
 Contains all of the reports, papers and documentation related to MLO development. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###publications
+### publications
 -----------------------------------------------------------------------------------------------------------------------
 
 For each paper published and related to MLO please create a seperate folder containing the relevant LaTeX code. The naming
 convention for the folder is as follows: conferencename_submissionnumber
 
 -----------------------------------------------------------------------------------------------------------------------
-###examples
+### examples
 -----------------------------------------------------------------------------------------------------------------------
 
 Contains reconfigurable computing fitness function examples. The fitness functions in this directory should be based on
@@ -54,13 +54,13 @@ Each folder within examples directory contains a fitnes and configuration script
 README.txt file refereing to fitness function relevant literature. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###testing
+### testing
 -----------------------------------------------------------------------------------------------------------------------
 
 testing contains all of the testing scripts. Currently implementing regression testing. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###views
+### views
 -----------------------------------------------------------------------------------------------------------------------
 
 creates the code of VIEW part of the MVC system. All modes, currently GUI and TERMINAL, reside in this directory. All 
@@ -86,7 +86,7 @@ images, plots and others. Currently only plot visuzalizer of the PSOTrial is ava
 
 
 -----------------------------------------------------------------------------------------------------------------------
-###controller
+### controller
 -----------------------------------------------------------------------------------------------------------------------
 
 Contains code of the controller of the applications. MODEL and VIEW use it to communiate with each other. 
@@ -102,7 +102,7 @@ a snapshot of the model and a reference to a visualization function. currently i
 be ported onto a computer cluster. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###model
+### model
 -----------------------------------------------------------------------------------------------------------------------
 
 contains code of the optimization algorithms, runs, trials and surrogate models. It contains code to back them up
@@ -121,7 +121,7 @@ model is the MLO algorithm presented in the FPT'12/ARC'13 papers.
 scripts prepares a bunch of trials of the same type, using a configuration script, and runs them. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###scripts within the directory
+### scripts within the directory
 -----------------------------------------------------------------------------------------------------------------------
 
 #### optimizer.py 
@@ -131,23 +131,23 @@ the optimizer initialization script
 some utility functions used throught the whole application. 
 ************************************************************************************************************************
 
-##Version convention vA.B.C.
+## Version convention vA.B.C.
 
 -----------------------------------------------------------------------------------------------------------------------
-###A
+### A
 -----------------------------------------------------------------------------------------------------------------------
 
 Within a revision starting with number A the fitness and configuration scripts should be compatible. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###B
+### B
 -----------------------------------------------------------------------------------------------------------------------
 
 Minor revisions can introduce changes to the methodology of upkeeping of application state. Before updating a minor revison
 please ensure that all of the current runs and trials have finished. 
 
 -----------------------------------------------------------------------------------------------------------------------
-###C
+### C
 -----------------------------------------------------------------------------------------------------------------------
 
 Extra features added with no implication on the state of the application. 
